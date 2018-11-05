@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Titillium+Web:200,300,400,600,700,900');
+
+/*  font-family: 'Titillium Web', sans-serif;
+    font-family: 'Raleway', sans-serif; */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FFDB00;
+    color: #242424;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.title-section {
+    padding-top: 124px;
+    font-weight: bold;
+}
+
+.esperluette-bar {
+    width: 200px;
+    height: 4px;
+    background-color: #242424;
+    margin: 0 auto;
+}
+
+.esperluette-circle {
+    content: '&';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #242424;
+    color: #FFDB00;
+    margin: 0 auto;
+    margin-top: -17px;
+}
+
+.esperluette-incircle {
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.esperluette-bar2 {
+    width: 200px;
+    height: 4px;
+    background-color: #FFDB00;
+    margin: 0 auto;
+}
+
+.esperluette-circle2 {
+    content: '&';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFDB00;
+    color: #242424;
+    margin: 0 auto;
+    margin-top: -17px;
+}
+
+.esperluette-incircle2 {
+    line-height: 30px;
+    font-weight: 200;
+}
+
+
+/* ----- TOPBAR ----- */
+
+#topBar {
+    background-color: #FFDB00;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo-topbar {
+    height: 70px;
+    width: auto;
+    padding-top: 5px;
+}
+
+
+/* ----- NAVIGATION ----- */
+
+#first-menu {
+    top: 80px !important;
+}
+
+#navBar,
+.navbar {
+    background-color: #242424;
+    color: #FFDB00;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu-link:hover {
+    background-color: #FFDB00 !important;
+    color: #242424 !important;
+    border: 2px solid #242424;
+}
+
+.burger-menu {
+    color: #FFDB00;
+}
+
+.burger-menu:hover {
+    background-color: #FFDB00 !important;
+    color: #242424 !important;
+    border-top: 2px solid #242424;
+}
+
+
+/* ----- HERO ----- */
+
+#hero {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #FFDB00;
+    color: #242424;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 4px solid #242424;
+}
+
+.esperluette {
+    color: #FFF;
+}
+
+.center {
+    position: absolute;
+    margin-top: 25%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    position: relative;
+    display: block;
+    line-height: .75;
+    text-shadow: 0 8px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: -10px;
+}
+
+.textBlock1 {
+    z-index: 3;
+    font-weight: bold;
+    font-size: 10em;
+    background-color: #FFDB00;
+    transform: skewY(-8deg);
+}
+
+.textBlock2 {
+    height: 50px;
+    z-index: 2;
+    font-weight: 100;
+    font-size: 1.5em;
+    letter-spacing: 12px;
+    background-color: #242424;
+    color: #FFF;
+    padding-left: 12px;
+    line-height: 2.2em;
+    transform: skewY(-8deg);
+}
+
+.textBlock3 {
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 10px;
+    background-color: #FFDB00;
+    transform: skewY(-8deg);
+}
+
+.textBlock4 {
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 10px;
+    background-color: #242424;
+    color: #FFDB00;
+    transform: skewY(-8deg);
+}
+
+.textBlock5 {
+    height: 80px;
+    line-height: 80px;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 10px;
+    background-color: #FFDB00;
+    transform: skewY(-8deg);
+}
+
+
+/* ----- ABOUT ----- */
+
+#about {
+    background-color: #FFF; 
+}
+
+.block-title-section {
+    padding-bottom: 60px;
+}
+
+.about-img {
+    width: 80px;
+    height: auto;
+    border: 3px solid #FFDB00;
+    border-radius: 50%;
+}
+
+.title-about {
+    font-weight: bold;
+}
+
+.text-about {
+    text-align: justify;
+}
