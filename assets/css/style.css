@@ -12,10 +12,16 @@ body {
     padding: 0;
     height: 100%;
     background-color: #FFDB00;
-    color: #242424;
-    font-family: 'Titillium Web', sans-serif;
+    color: #22292F;
+    font-family: 'Raleway', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -40,7 +46,7 @@ section {
 .esperluette-bar {
     width: 200px;
     height: 4px;
-    background-color: #242424;
+    background-color: #22292F;
     margin: 0 auto;
 }
 
@@ -49,7 +55,7 @@ section {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #242424;
+    background-color: #22292F;
     color: #FFDB00;
     margin: 0 auto;
     margin-top: -17px;
@@ -73,7 +79,7 @@ section {
     height: 30px;
     border-radius: 50%;
     background-color: #FFDB00;
-    color: #242424;
+    color: #22292F;
     margin: 0 auto;
     margin-top: -17px;
 }
@@ -109,7 +115,7 @@ section {
 
 #navBar,
 .navbar {
-    background-color: #242424;
+    background-color: #22292F;
     color: #FFDB00;
     font-size: 1.25em;
     text-transform: uppercase;
@@ -118,8 +124,8 @@ section {
 
 .menu-link:hover {
     background-color: #FFDB00 !important;
-    color: #242424 !important;
-    border: 2px solid #242424;
+    color: #22292F !important;
+    border: 2px solid #22292F;
 }
 
 .burger-menu {
@@ -128,8 +134,8 @@ section {
 
 .burger-menu:hover {
     background-color: #FFDB00 !important;
-    color: #242424 !important;
-    border-top: 2px solid #242424;
+    color: #22292F !important;
+    border-top: 2px solid #22292F;
 }
 
 
@@ -138,10 +144,10 @@ section {
 #hero {
     font-family: 'Titillium Web', sans-serif;
     background-color: #FFDB00;
-    color: #242424;
+    color: #22292F;
     width: 100%;
     height: 100vh;
-    border-bottom: 4px solid #242424;
+    border-bottom: 4px solid #22292F;
 }
 
 .esperluette {
@@ -178,7 +184,7 @@ section {
     font-weight: 100;
     font-size: 1.5em;
     letter-spacing: 12px;
-    background-color: #242424;
+    background-color: #22292F;
     color: #FFF;
     padding-left: 12px;
     line-height: 2.2em;
@@ -203,7 +209,7 @@ section {
     font-weight: 400;
     font-size: 5em;
     letter-spacing: 10px;
-    background-color: #242424;
+    background-color: #22292F;
     color: #FFDB00;
     transform: skewY(-8deg);
 }
@@ -223,7 +229,9 @@ section {
 /* ----- ABOUT ----- */
 
 #about {
-    background-color: #FFF; 
+    background-color: #FFF;
+    border-bottom: 4px solid #FFDB00;
+    padding-bottom: 42px;
 }
 
 .block-title-section {
@@ -249,6 +257,84 @@ section {
 /* ----- MEMBERS ----- */
 
 #members {
-    background-color: #242424;
+    width: 100%;
+    height: 100%;
+    background-color: #22292F;
     color: #FFDB00;
+}
+
+.members-block-section {
+    padding-bottom: 15px;
+}
+
+.members-card {
+    background-color: #FFDB00;
+    color: #22292F;
+}
+
+.members-img {
+    border: 4px solid #FFDB00;
+}
+
+.members-function {
+    color: #22292F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.members-btn-section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.members-btn {
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #22292F;
+    color: #FFF;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 4px solid #FFDB00;
+    text-shadow: 0 3px 1px rgba(0, 0, 0, 0.7);
+}
+
+.members-btn:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.members-btn:hover:before {
+    top: -50%;
+}
+
+.members-btn:after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.members-btn:hover:after {
+    bottom: -50%;
 }
