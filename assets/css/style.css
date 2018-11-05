@@ -150,7 +150,7 @@ section {
     border-bottom: 4px solid #22292F;
 }
 
-.esperluette {
+.esperluette, .dollars {
     color: #FFF;
 }
 
@@ -337,4 +337,120 @@ section {
 
 .members-btn:hover:after {
     bottom: -50%;
+}
+
+
+/* ----- EVENTS----- */
+
+.events-block {
+    margin: 0 auto;
+}
+
+.events-text {
+    text-align: justify !important;
+    padding: 0 20px 0 20px;
+}
+
+.events-card {
+    width: 92%;
+    max-width: 300px;
+}
+
+.events-block-section {
+    padding-bottom: 15px;
+}
+
+.events-card {
+    background-color: #22292F;
+    color: #FFDB00;
+}
+
+.meetup-img {
+    width: 100%;
+    height: auto;
+}
+
+.meetup-text {
+    text-align: justify;
+}
+
+
+
+.meetup-btn-section {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.meetup-btn {
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #22292F;
+    color: #FFF;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 4px solid #FFDB00;
+    text-shadow: 0 3px 1px rgba(0, 0, 0, 0.7);
+}
+
+.meetup-btn:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.meetup-btn:hover:before {
+    top: -50%;
+}
+
+.meetup-btn:after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.meetup-btn:hover:after {
+    bottom: -50%;
+}
+
+
+/* ----- JSBC ----- */
+
+#jsbc {
+    background-color: #22292F;
+    color: #FFDB00;
+}
+
+.jsbc-block-section {
+    text-align: justify;
+}
+
+hr.jsbc-separator {
+    border-top: 1px solid #ffdb00;
+    width: 75%;
+}
+
+.jsbc-img {
+    width: 100px;
+    height: auto;
 }
