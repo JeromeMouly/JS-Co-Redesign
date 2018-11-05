@@ -239,17 +239,17 @@ section {
 }
 
 .about-img {
-    width: 80px;
+    width: 100px;
     height: auto;
     border: 3px solid #FFDB00;
     border-radius: 50%;
 }
 
-.title-about {
+.about-title {
     font-weight: bold;
 }
 
-.text-about {
+.about-text{
     text-align: justify;
 }
 
@@ -453,4 +453,10 @@ hr.jsbc-separator {
 .jsbc-img {
     width: 100px;
     height: auto;
+    border: 4px solid #FFDB00;
+    border-radius: 50%;
+}
+
+.jsbc-text {
+    text-align: justify;
 }
