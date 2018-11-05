@@ -460,3 +460,9 @@ hr.jsbc-separator {
 .jsbc-text {
     text-align: justify;
 }
+
+ /* ----- PARTNERS ----- */
+
+ .partners-block {
+     padding-bottom: 20px;
+ }
