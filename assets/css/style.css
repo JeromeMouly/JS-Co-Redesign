@@ -342,9 +342,7 @@ section {
 
 /* ----- EVENTS----- */
 
-.events-block {
-    margin: 0 auto;
-}
+
 
 .events-text {
     text-align: justify !important;
@@ -466,3 +464,19 @@ hr.jsbc-separator {
  .partners-block {
      padding-bottom: 20px;
  }
+
+
+  /* ----- CONTACT ----- */
+
+#contact {
+    background-color: #22292F;
+    color: #FFDB00;
+}
+
+.contact-maps {
+    border-top: 4px solid #FFDB00;
+}
+
+.arobase-contact {
+    color: #FFF;
+}
