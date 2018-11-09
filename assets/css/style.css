@@ -33,6 +33,17 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    width: 100%;
+    height: auto;
+}
+
 section {
     width: 100%;
     height: 100%;
@@ -136,6 +147,46 @@ section {
     background-color: #FFDB00 !important;
     color: #22292F !important;
     border-top: 2px solid #22292F;
+}
+
+
+/* ----- FOOTER ----- */
+
+#footer {
+    background-color: #22292F;
+    color: #FFDB00;
+    border-top: 4px solid #FFDB00;
+}
+
+.subfooter-section {
+    background-color: #ffdb00;
+    color: #22292F;
+    width: 100%;
+    height: 25px;
+}
+
+.subfooter {
+    font-size: 0.75em;
+    line-height: 15px;
+}
+
+.become-members-btn-section {
+    padding-bottom: 50px;
+}
+
+.become-members-btn {
+    background-color: #FFDB00;
+    color: #22292F;
+    border: none;
+    width: 250px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.twitter-block {
+    width: 100%;
+    height: 200px;
 }
 
 
@@ -272,12 +323,25 @@ section {
     color: #22292F;
 }
 
+.members-card-page {
+    background-color: #22292F;
+    color: #ffdb00;
+}
+
 .members-img {
     border: 4px solid #FFDB00;
 }
 
 .members-function {
     color: #22292F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.members-function-page {
+    color: #FFDB00;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     text-transform: uppercase;

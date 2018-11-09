@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript & Co || Association de développeurs et d'entrepreneurs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- TOPBAR -->
+    <div id="topBar" class="w3-row">
+        <div class="w3-content w3-container">
+            <div class="w3-center">
+                <a href="../../index.html" style="cursor:pointer"><img src="../img/esperluette.png" alt="Logo Esperluette JS&Co"
+                        class="logo-topbar"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div id="first-menu" class="w3-top">
+        <div class="w3-bar w3-center navbar">
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">About</a>
+            <a href="#members" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Members</a>
+            <a href="#events" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Events</a>
+            <a href="#jsbc" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">JS&BC</a>
+            <a href="#partners" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Partners</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Contact</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium burger-menu"
+                onclick="myFunction()">&#9776;</a>
+        </div>
+        <div id="navBar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">About</a>
+            <a href="#members" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Members</a>
+            <a href="#events" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Events</a>
+            <a href="#jsbc" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">JS&BC</a>
+            <a href="#partners" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Partners</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">Contact</a>
+        </div>
+    </div>
+
+    <section id="members-page">
+        <div class="w3-row">
+            <div class="w3-content w3-container w3-center block-title-section">
+                <h1 class="title-section">Qui sommes nous ?</h1>
+                <div class="esperluette-bar"></div>
+                <div class="esperluette-circle">
+                    <div class="esperluette-incircle">&</div>
+                </div>
+                <h5 class="subtext-section">2018, c'est un nouveau trio pour animer notre association.
+                    Mais nous sommes légion !!</h5>
+            </div>
+            <div class="w3-content w3-container w3-center members-page-section">
+                <div class="w3-third w3-center members-page-block">
+                    <div class="w3-card-4 members-card-page" style="width:95%">
+                        <div class="w3-container w3-center">
+                            <h3>François AUBEUT-GERVAISE</h3>
+                            <img src="../img/francois-small.jpg" alt="Avatar" style="width:90%" class="members-img">
+                            <h5 class="members-function-page">Président</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-center members-page-block">
+                    <div class="w3-card-4 members-card-page" style="width:95%">
+                        <div class="w3-container w3-center">
+                            <h3>Jérémy SIMONKLEIN-ANGELY</h3>
+                            <img src="../img/jimmy-small.jpg" alt="Avatar" style="width:90%" class="members-img">
+                            <h5 class="members-function-page">Secrétaire</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third w3-center members-page-block">
+                    <div class="w3-card-4 members-card-page" style="width:95%">
+                        <div class="w3-container w3-center">
+                            <h3 style="padding-top:17px;padding-bottom:18px">Thibaut LEFORT</h3>
+                            <img src="../img/thibault-small.jpg" alt="Avatar" style="width:90%" class="members-img">
+                            <h5 class="members-function-page">Trésorier</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-content w3-container w3-center block-title-section">
+                <h1 class="title-section">Qui sommes nous ?</h1>
+                <div class="esperluette-bar"></div>
+                <div class="esperluette-circle">
+                    <div class="esperluette-incircle">&</div>
+                </div>
+                <h5 class="subtext-section">2018, c'est un nouveau trio pour animer notre association.
+                    Mais nous sommes légion !!</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="w3-content w3-container">
+            <div class="w3-quarter">TEST TEST</div>
+            <div class="w3-quarter">TEST TEST</div>
+            <div class="w3-quarter">TEST TEST</div>
+            <div class="w3-quarter">TEST TEST</div>
+        </div>
+        <div class="subfooter">
+                <div class="w3-content w3-container w3-center">
+                    <p class="subfooter-text">&copy; Javascript & Co 2018 || Developed & Designed with <3 by Mexar and JMWebdesign</p>
+                </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js" async defer></script>
+</body>
+
+</html>
