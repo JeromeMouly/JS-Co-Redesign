@@ -342,6 +342,7 @@ section {
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 5px;
+    padding-top: 10px;
 }
 
 .members-function-page {
@@ -429,7 +430,7 @@ section {
 
 .members-card:hover {
     border-radius: 5px;
-    height: 480px;
+    height: 360px;
     width: 315px;
     box-shadow: 0 0 10px 4px #22292F;
 }
