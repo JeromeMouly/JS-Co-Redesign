@@ -133,10 +133,14 @@ section {
     letter-spacing: 2px;
 }
 
+
+
 .menu-link:hover {
     background-color: #FFDB00 !important;
     color: #22292F !important;
     border: 2px solid #22292F;
+    letter-spacing: 5px;
+    transition: 0.5s;
 }
 
 .burger-menu {
@@ -401,6 +405,108 @@ section {
 
 .members-btn:hover:after {
     bottom: -50%;
+}
+
+.members-view .members-img {
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    border: 3px solid #22292F;
+}
+
+.members-card {
+    border-radius: 25% 5%;
+    margin: 0 auto;
+    display: block;
+    height: 250px;
+    width: 250px;
+    background: #FFDB00;
+    overflow: hidden;
+    box-shadow: 0 0 6px 2px #22292F;
+    transition: all ease 0.3s;
+}
+
+.members-card:hover {
+    border-radius: 5px;
+    height: 480px;
+    width: 315px;
+    box-shadow: 0 0 10px 4px #22292F;
+}
+
+.members-card:hover .members-view .members-img {
+    animation: profile_image 2000ms linear both;
+    animation-delay: 0.5s;
+}
+
+.members-view .members-name {
+    position: relative;
+    text-align: center;
+    color: #22292F;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 10px;
+    transition: all ease 0.250s;
+    border-top: 1px solid #22292F;
+    border-bottom: 1px solid #22292F;
+}
+
+.members-card:hover .members-view .members-name {
+    margin-top: 0px;
+    outline: 0 solid #FFDB00;
+    border-top: 0px solid #22292F;
+    border-bottom: 1px solid #22292F;
+}
+
+.members-view .members-function {
+    text-align: center;
+    color: #22292F;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 0px;
+    margin: 0;
+}
+
+.members-profile {
+    margin-top: 20px;
+    padding: 1px 20px 10px 20px !important;
+    transition: all linear 1.5s;
+    color: #22292F;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.members-card:hover .members-profile {
+    opacity: 1;
+}
+
+.members-profile p:first-child {
+    text-align: center;
+    font-size: 16px;
+}
+
+.members-social-links {
+    position: absolute;
+    margin-top: -440px;
+    margin-left: -100px;
+    list-style-type: none;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.members-card:hover .members-social-links {
+    margin-left: -30px;
+    opacity: 1;
+}
+
+.members-social-links li .members-img {
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 
