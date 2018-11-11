@@ -360,11 +360,11 @@ section {
 }
 
 .members-btn {
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #22292F;
-    color: #FFF;
+    color: #22292F;
     padding: 8px 10px;
     text-align: center;
     display: inline-block;
@@ -373,7 +373,7 @@ section {
     transform: translate(-50%, -50%);
     overflow: hidden;
     border: 4px solid #FFDB00;
-    text-shadow: 0 3px 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
 }
 
 .members-btn:before {
@@ -390,6 +390,10 @@ section {
 
 .members-btn:hover:before {
     top: -50%;
+}
+
+.members-btn:hover {
+    color: #FFF;
 }
 
 .members-btn:after {
