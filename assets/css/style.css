@@ -345,14 +345,6 @@ section {
     padding-top: 10px;
 }
 
-.members-function-page {
-    color: #FFDB00;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
 .members-btn-section {
     padding-top: 80px;
     padding-bottom: 100px;
@@ -475,15 +467,6 @@ section {
     margin: 0;
 }
 
-.members-profile {
-    margin-top: 20px;
-    padding: 1px 20px 10px 20px !important;
-    transition: all linear 1.5s;
-    color: #22292F;
-    font-size: 14px;
-    opacity: 0;
-}
-
 .members-card:hover .members-profile {
     opacity: 1;
 }
@@ -520,6 +503,120 @@ section {
 
 .members-function-bottom {
     font-size: 1em;
+}
+
+
+/* ----- MEMBERS PAGE ----- */
+
+#members-page {
+    width: 100%;
+    height: 100%;
+    background-color: #FFDB00;
+    color: #22292F;
+}
+
+.members-card-page {
+    background-color: #FFDB00;
+    color: #22292F;
+}
+
+.members-view-page .members-img-page {
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    border: 3px solid #FFDB00;
+}
+
+.members-card-page {
+    border-radius: 25% 5%;
+    margin: 0 auto;
+    display: block;
+    height: 250px;
+    width: 250px;
+    background: #22292F;
+    overflow: hidden;
+    box-shadow: 0 0 6px 2px #22292F;
+    transition: all ease 0.3s;
+}
+
+.members-card-page:hover {
+    border-radius: 5px;
+    height: 525px;
+    width: 315px;
+    box-shadow: 0 0 10px 4px #22292F;
+}
+
+.members-card-page:hover .members-view-page .members-img-page {
+    animation: profile_image 2000ms linear both;
+    animation-delay: 0.5s;
+}
+
+.members-view-page .members-name-page {
+    position: relative;
+    text-align: center;
+    color: #FFDB00;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 10px;
+    transition: all ease 0.250s;
+    border-top: 1px solid #FFDB00;
+    border-bottom: 1px solid #FFDB00;
+}
+
+.members-card-page:hover .members-view-page .members-name-page {
+    margin-top: 0px;
+    outline: 0 solid #FFDB00;
+    border-top: 0px solid #FFDB00;
+    border-bottom: 1px solid #FFDB00;
+}
+
+.members-view-page .members-function-page {
+    text-align: center;
+    color: #FFDB00;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 0px;
+    margin: 0;
+}
+
+.members-profile-page {
+    margin-top: 20px;
+    padding: 1px 20px 10px 20px !important;
+    transition: all linear 1.5s;
+    color: #FFDB00;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.members-card-page:hover .members-profile-page {
+    opacity: 1;
+}
+
+.members-profile-page p:first-child {
+    text-align: center;
+    font-size: 16px;
+}
+
+.members-function-page {
+    color: #FFDB00;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 10px;
+}
+
+.members-profile-page {
+    margin-top: 20px;
+    padding: 1px 20px 10px 20px !important;
+    transition: all linear 1.5s;
+    color: #FFDB00;
+    font-size: 14px;
+    opacity: 0;
 }
 
 
@@ -564,11 +661,11 @@ section {
 }
 
 .meetup-btn {
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #22292F;
-    color: #FFF;
+    color: #22292F;
     padding: 8px 10px;
     text-align: center;
     display: inline-block;
@@ -579,7 +676,6 @@ section {
     transform: translate(-50%, -50%);
     overflow: hidden;
     border: 4px solid #FFDB00;
-    text-shadow: 0 3px 1px rgba(0, 0, 0, 0.7);
 }
 
 .meetup-btn:before {
@@ -596,6 +692,10 @@ section {
 
 .meetup-btn:hover:before {
     top: -50%;
+}
+
+.meetup-btn:hover {
+    color: #FFF;
 }
 
 .meetup-btn:after {
@@ -658,6 +758,7 @@ hr.jsbc-separator {
 
 .contact-maps {
     border-top: 4px solid #FFDB00;
+    margin-bottom: -6px;
 }
 
 .arobase-contact {
