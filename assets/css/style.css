@@ -510,6 +510,14 @@ section {
     padding: 5px;
 }
 
+.members-name-bottom {
+    font-size: 1.25em;
+}
+
+.members-function-bottom {
+    font-size: 1em;
+}
+
 
 /* ----- EVENTS----- */
 
