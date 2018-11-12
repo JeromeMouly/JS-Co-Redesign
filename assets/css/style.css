@@ -313,7 +313,7 @@ section {
 
 #members {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #22292F;
     color: #FFDB00;
 }
@@ -325,11 +325,6 @@ section {
 .members-card {
     background-color: #FFDB00;
     color: #22292F;
-}
-
-.members-card-page {
-    background-color: #22292F;
-    color: #ffdb00;
 }
 
 .members-img {
@@ -426,7 +421,7 @@ section {
 
 .members-card:hover {
     border-radius: 5px;
-    height: 360px;
+    height: 360px ;
     width: 315px;
     box-shadow: 0 0 10px 4px #22292F;
 }
@@ -476,27 +471,6 @@ section {
     font-size: 16px;
 }
 
-.members-social-links {
-    position: absolute;
-    margin-top: -440px;
-    margin-left: -100px;
-    list-style-type: none;
-    opacity: 0;
-    transition: all ease 0.5s;
-}
-
-.members-card:hover .members-social-links {
-    margin-left: -30px;
-    opacity: 1;
-}
-
-.members-social-links li .members-img {
-    width: 30px;
-    background: #fff;
-    border-radius: 50%;
-    padding: 5px;
-}
-
 .members-name-bottom {
     font-size: 1.25em;
 }
@@ -516,8 +490,8 @@ section {
 }
 
 .members-card-page {
-    background-color: #FFDB00;
-    color: #22292F;
+    background-color: #22292F;
+    color: #ffdb00 !important;
 }
 
 .members-view-page .members-img-page {
@@ -542,7 +516,7 @@ section {
 
 .members-card-page:hover {
     border-radius: 5px;
-    height: 525px;
+    height: 575px;
     width: 315px;
     box-shadow: 0 0 10px 4px #22292F;
 }
@@ -617,6 +591,19 @@ section {
     color: #FFDB00;
     font-size: 14px;
     opacity: 0;
+}
+
+.members-founder {
+    width: 25px;
+    height: auto;
+}
+
+.members-date-page {
+    width: 100%;
+    height: auto;
+    background-color: #FFDB00;
+    color: #22292F;
+    bottom: 0 !important;
 }
 
 
