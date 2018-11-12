@@ -141,7 +141,8 @@
             </div>
             <div class="w3-content w3-container w3-center w3-padding-64">
                 <div class="w3-third" style="padding-bottom:20px">
-                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')" onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
+                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')"
+                        onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
                         <header class="members-view">
                             <img src="assets/img/francois-small.jpg" alt="Photo de François AUBEUT-GERVAISE" class="members-img">
                             <h1 class="members-name">François AUBEUT-GERVAISE</h1>
@@ -157,9 +158,10 @@
                     <h2 class="members-function-bottom">Président</h2>
                 </div>
                 <div class="w3-third" style="padding-bottom:20px">
-                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')" onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
+                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')"
+                        onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
                         <header class="members-view">
-                        <img src="assets/img/jimmy-small.jpg" alt="Photo de Jérémy SIMONKLEIN-ANGELY" class="members-img">
+                            <img src="assets/img/jimmy-small.jpg" alt="Photo de Jérémy SIMONKLEIN-ANGELY" class="members-img">
                             <h1 class="members-name">Jérémy SIMONKLEIN-ANGELY</h1>
                             <h2 class="members-function">Secrétaire</h2>
                         </header>
@@ -170,10 +172,11 @@
                         </div> -->
                     </aside>
                     <h1 class="members-name-bottom">Jérémy SIMONKLEIN-ANGELY</h1>
-                            <h2 class="members-function-bottom">Secrétaire</h2>
+                    <h2 class="members-function-bottom">Secrétaire</h2>
                 </div>
                 <div class="w3-third" style="padding-bottom:20px">
-                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')" onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
+                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')"
+                        onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
                         <header class="members-view">
                             <img src="assets/img/thibault-small.jpg" alt="Photo de François AUBEUT-GERVAISE" class="members-img">
                             <h1 class="members-name">Thibaut LEFORT</h1>
@@ -460,7 +463,8 @@
                     <h6>Vous souhaitez rejoindre notre association et participer à nos différents évènements</h6>
                 </div>
                 <div class="become-members-btn-section">
-                    <a href=""><button class="become-members-btn">Devenir Membre</button></a>
+                    <button class="become-members-btn" onclick="document.getElementById('becomeMembers').style.display='block'">Devenir
+                        Membre</button>
                 </div>
             </div>
             <div class="w3-quarter w3-center">
@@ -477,9 +481,12 @@
             <div class="w3-quarter w3-center">
                 <h4 class="become-members-title">Derniers Evénements</h4>
                 <ul>
-                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/" target="_blank">JS & BATTLE / BATTLEDEV 2018</a></li>
-                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/" target="_blank">LA TETE DANS LES ETOILES, LE CODE DANS METEOR</a></li>
-                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/" target="_blank">DE NODEJS A METEOR : OBSTACLES ET EVOLUTION</a></li>
+                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/"
+                            target="_blank">JS & BATTLE / BATTLEDEV 2018</a></li>
+                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/"
+                            target="_blank">LA TETE DANS LES ETOILES, LE CODE DANS METEOR</a></li>
+                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/"
+                            target="_blank">DE NODEJS A METEOR : OBSTACLES ET EVOLUTION</a></li>
                 </ul>
             </div>
             <div class="w3-quarter">
@@ -492,13 +499,39 @@
         </div>
         <div class="subfooter-section">
             <div class="w3-content w3-container w3-center subfooter">
-                <p class="subfooter-text">&copy; Javascript & Co 2018 || Developed & Designed with <3 by Mexar and
-                    JMWebdesign</p>
+                <p class="subfooter-text">&copy; Javascript & Co 2018 || Developed & Designed with <3 by Mexar and JMWebdesign</p>
             </div>
         </div>
     </footer>
 
-    
+    <!-- MODAL BECOME MEMBERS -->
+    <div id="becomeMembers" class="w3-modal become-members-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container become-members-modal-header"> 
+                <span onclick="document.getElementById('becomeMembers').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Devenir Membre et/ou Faire un Don</h2>
+              </header>
+            <div class="">
+                <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright close-btn-modal">&times;</span>
+                <div class="breadcrumb-modal-become-members flat">
+                    <a href="#" class="active" style="width:25%">Browse</a>
+                    <a href="#" style="width:25%">Compare</a>
+                    <a href="#" style="width:25%">Order Confirmation</a>
+                    <a href="#" style="width:25%">Checkout</a>
+                </div>
+            </div>
+            <div class="w3-container become-members-modal-text">
+                <p>Some text..</p>
+                <p>Some text..</p>
+            </div>
+            <footer class="w3-container become-members-modal-footer">
+                <p>Modal Footer</p>
+            </footer>
+        </div>
+    </div>
+
+
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="assets/js/app.js" async defer></script>
 </body>
