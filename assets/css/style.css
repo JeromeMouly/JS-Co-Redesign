@@ -169,7 +169,20 @@ section {
     width: 57px !important;
 }
 
-.become-members-modal-header, .become-members-modal-footer {
+.close-btn-modal {
+    color: #FFDB00;
+    font-size: 2em;
+}
+
+.close-btn-modal:hover {
+    background-color: #FFDB00 !important;
+    color: #22292F !important;
+    height: 65px;
+    font-size: 2em;
+}
+
+.become-members-modal-header,
+.become-members-modal-footer {
     background-color: #22292F;
     color: #FFDB00;
 }
@@ -224,9 +237,7 @@ section {
     height: 36px;
     transform: scale(0.707) rotate(45deg);
     z-index: 1;
-    box-shadow:
-        2px -2px 0 2px rgba(34, 41, 47, 0.8),
-        3px -3px 0 2px rgba(255, 219, 0, 0.2);
+    box-shadow: 2px -2px 0 2px rgba(34, 41, 47, 0.8), 3px -3px 0 2px rgba(255, 219, 0, 0.2);
     border-radius: 0 5px 0 50px;
 }
 
@@ -285,6 +296,63 @@ section {
     color: #22292F;
 }
 
+.container {
+    display: inline-flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #FFDB00;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #22292F;
+}
+
+.container input:checked~.checkmark {
+    background-color: #22292F;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FFDB00;
+}
+
+
 /* ----- TOPBAR ----- */
 
 #topBar {
@@ -316,8 +384,6 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
-
 
 .menu-link:hover {
     background-color: #FFDB00 !important;
@@ -842,8 +908,6 @@ section {
 
 /* ----- EVENTS----- */
 
-
-
 .events-text {
     text-align: justify !important;
     padding: 0 20px 0 20px;
@@ -871,8 +935,6 @@ section {
 .meetup-text {
     text-align: justify;
 }
-
-
 
 .meetup-btn-section {
     padding-top: 15px;
@@ -961,6 +1023,7 @@ hr.jsbc-separator {
 .jsbc-text {
     text-align: justify;
 }
+
 
 /* ----- PARTNERS ----- */
 

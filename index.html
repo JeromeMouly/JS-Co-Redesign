@@ -29,11 +29,11 @@
     <div id="becomeMembers" class="w3-modal become-members-modal">
         <div class="w3-modal-content w3-animate-zoom w3-card-4">
             <header class="w3-container become-members-modal-header">
-                <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright close-btn-modal">&times;</span>
                 <h2>Devenir Membre et/ou Faire un Don</h2>
             </header>
             <div class="">
-                <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright close-btn-modal">&times;</span>
+                <!-- <span onclick="document.getElementById('becomeMembers').style.display='none'" class="w3-button w3-display-topright">&times;</span> -->
                 <div class="breadcrumb-modal-become-members flat">
                     <a href="#" class="active" style="width:25%"><i class="fa fa-shopping-cart"
                             aria-hidden="true"></i>&nbsp;&nbsp;Choix
@@ -47,8 +47,7 @@
                 <div class="become-members-payments">
                     <h3><strong>Cotisation Membre</strong></h3>
                     <div class="w3-col s12 m8 l8">
-                        <p>Vous devenez membre de JS&Co et obtenez des réductions aux formations et aux
-                            événements payants.</p>
+                        <p>Vous devenez membre de JS&Co et obtenez des réductions aux formations et aux événements payants.</p>
                     </div>
                     <div class="w3-col s12 m2 l2 w3-center">
                         <h2><strong>30 €</strong></h2>
@@ -74,17 +73,16 @@
             </div>
             <hr class="modal-divider">
             <div class="w3-content w3-container w3-center">
-                <h3><strong>Avez-vous un code promo ?</strong></h3>
-                <p>Attention, les codes promo ne sont pas valables pour les dons.</p>
+                <h3><strong>Avez-vous un code promo* ?</strong></h3>
                 <div class="w3-row w3-content w3-container w3-center">
                     <div class="w3-twothird">
-                        <input class="w3-input w3-border" type="text" placeholder="Code Promo"
-                            style="width:268px;margin-left:205px">
+                        <input class="w3-input w3-border" type="text" placeholder="Code Promo" style="width:268px;margin-left:205px">
                     </div>
                     <div class="w3-third" style="margin-left: -205px;">
                         <button class="w3-right add-btn-modal">Ajouter</button>
                     </div>
                 </div>
+                <p>* Attention, les codes promo ne sont pas valables pour les dons.</p>
             </div>
             <hr class="modal-divider">
             <div class="w3-content w3-container w3-center">
@@ -93,38 +91,36 @@
             </div>
             <div class="w3-content w3-container w3-center">
                 <div class="w3-quarter">
-                    <p>
-                        <input class="w3-radio" type="radio" name="gender" value="male" checked>
-                        <label>Pas de Don</label>
-                    </p>
+                    <label class="container">Pas de Don
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="w3-quarter">
-                    <p>
-                        <input class="w3-radio" type="radio" name="gender" value="male" checked>
-                        <label>5 &euro;</label>
-                    </p>
+                    <label class="container">5 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="w3-quarter">
-                    <p>
-                        <input class="w3-radio" type="radio" name="gender" value="male" checked>
-                        <label>10 &euro;</label>
-                    </p>
+                    <label class="container">10 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="w3-quarter">
-                    <p>
-                        <input class="w3-radio" type="radio" name="gender" value="male" checked>
-                        <label>20 &euro;</label>
-                    </p>
+                    <label class="container">20 &euro;
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
-            </div>
-            <div class="w3-content w3-container w3-center">
-                <div class="w3-half w3-container w3-content w3-center">
-                    <p>
-                        <input class="w3-radio" type="radio" name="gender" value="male" checked>
-                        <label>Montant de votre choix : </label>
-                    </p>
+                <div class="w3-half">
+                    <label class="container">Montant de votre choix :
+                           <input type="radio" name="radio">
+                           <span class="checkmark"></span>
+                    </label>
                 </div>
-                <div class="w3-half w3-container w3-content w3-center">
+                <div class="w3-half">
                     <input class="w3-input w3-border" type="text" placeholder="Votre Montant">
                 </div>
             </div>
@@ -142,8 +138,7 @@
     <div id="topBar" class="w3-row">
         <div class="w3-content w3-container">
             <div class="w3-center">
-                <a href="#" style="cursor:pointer"><img src="assets/img/esperluette.png" alt="Logo Esperluette JS&Co"
-                        class="logo-topbar"></a>
+                <a href="#" style="cursor:pointer"><img src="assets/img/esperluette.png" alt="Logo Esperluette JS&Co" class="logo-topbar"></a>
             </div>
         </div>
     </div>
@@ -157,8 +152,7 @@
             <a href="#jsbc" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">JS&BC</a>
             <a href="#partners" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Partners</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small menu-link" style="width:16.66%">Contact</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium burger-menu"
-                onclick="myFunction()">&#9776;</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium burger-menu" onclick="myFunction()">&#9776;</a>
         </div>
         <div id="navBar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
             <a href="#about" class="w3-bar-item w3-button w3-center menu-link" onclick="closeOnClick()">About</a>
@@ -196,45 +190,32 @@
                 <div class="w3-third w3-container about-block">
                     <img src="assets/img/reseau.svg" alt="Logo Réseau" class="about-img">
                     <h2 class="about-title">Un Réseau</h2>
-                    <p class="about-text">Nous sommes avant tout un réseau de développeurs et d'entrepreneurs réunis
-                        autour des nouvelles technologies du JavaScript. Le point central que nous sommes permet a ces
-                        deux mondes d'échanger leurs connaissances.</p>
+                    <p class="about-text">Nous sommes avant tout un réseau de développeurs et d'entrepreneurs réunis autour des nouvelles technologies du JavaScript. Le point central que nous sommes permet a ces deux mondes d'échanger leurs connaissances.</p>
                 </div>
                 <div class="w3-third w3-container about-block">
                     <img src="assets/img/expert.svg" alt="Logo Expertise" class="about-img">
                     <h2 class="about-title">Une Expertise</h2>
-                    <p class="about-text">Développement, expérience utilisateur, design, graphisme et business autour
-                        du web. Nos membres et notre environnement réunissent des experts autour de Toulouse ayant de
-                        multiples compétences à partager.</p>
+                    <p class="about-text">Développement, expérience utilisateur, design, graphisme et business autour du web. Nos membres et notre environnement réunissent des experts autour de Toulouse ayant de multiples compétences à partager.</p>
                 </div>
                 <div class="w3-third w3-container about-block">
                     <img src="assets/img/business.svg" alt="Logo Entrepreneurs" class="about-img">
                     <h2 class="about-title">Des Entrepreneurs</h2>
-                    <p class="about-text">Le panel de domaines est très varié. Hebergement web, la restauration, en
-                        passant par le e-commerce ou la démocratie en ligne. Les conseils avisés de nos entrepreneurs
-                        couvre un large éventails de possibilités.</p>
+                    <p class="about-text">Le panel de domaines est très varié. Hebergement web, la restauration, en passant par le e-commerce ou la démocratie en ligne. Les conseils avisés de nos entrepreneurs couvre un large éventails de possibilités.</p>
                 </div>
                 <div class="w3-third w3-container about-block">
                     <img src="assets/img/code.svg" alt="Logo Développeurs" class="about-img">
                     <h2 class="about-title">Des Développeurs</h2>
-                    <p class="about-text">Nous essayons d'apprendre constamment les dernières technologies JavaScript
-                        afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos
-                        connaissances dans des cas de production afin de tester les technologies et leur limites.</p>
+                    <p class="about-text">Nous essayons d'apprendre constamment les dernières technologies JavaScript afin de pouvoir conseiller et former correctement nos membres. Nous appliquons également nos connaissances dans des cas de production afin de tester les technologies
+                        et leur limites.</p>
                 </div>
-                <div class="w3-third w3-container about-block"><img src="assets/img/formation.svg" alt="Logo Formations"
-                        class="about-img">
+                <div class="w3-third w3-container about-block"><img src="assets/img/formation.svg" alt="Logo Formations" class="about-img">
                     <h2 class="about-title">Des Formations</h2>
-                    <p class="about-text">Notre gros projet est de faire des formations d'initiation pour les débutants
-                        ou d'amélioration pour les plus aguerris. Ceci afin de répandre l'utilisation du JavaScript de
-                        façon ludique et le moins cher possible.</p>
+                    <p class="about-text">Notre gros projet est de faire des formations d'initiation pour les débutants ou d'amélioration pour les plus aguerris. Ceci afin de répandre l'utilisation du JavaScript de façon ludique et le moins cher possible.</p>
                 </div>
-                <div class="w3-third w3-container about-block"><img src="assets/img/screen.svg" alt="Logo Evénements"
-                        class="about-img">
+                <div class="w3-third w3-container about-block"><img src="assets/img/screen.svg" alt="Logo Evénements" class="about-img">
                     <h2 class="about-title">Des Evénements</h2>
-                    <p class="about-text">Suite à la réussite du CodeFest de 2017, nous avons pour projet
-                        d'organiser un autre autre hackathon dans les prochains mois et d'en faire une habitude.
-                        Lighting talk, retour d'expériences ou simple rencontre autour d'un verre, tenez vous au
-                        courant sur Facebook ou Meetup.</p>
+                    <p class="about-text">Suite à la réussite du CodeFest de 2017, nous avons pour projet d'organiser un autre autre hackathon dans les prochains mois et d'en faire une habitude. Lighting talk, retour d'expériences ou simple rencontre autour d'un verre, tenez
+                        vous au courant sur Facebook ou Meetup.</p>
                 </div>
             </div>
         </div>
@@ -249,13 +230,11 @@
                 <div class="esperluette-circle2">
                     <div class="esperluette-incircle2">&</div>
                 </div>
-                <h5 class="subtext-section">2018, c'est un nouveau trio pour animer notre association.
-                    Mais nous sommes légion !!</h5>
+                <h5 class="subtext-section">2018, c'est un nouveau trio pour animer notre association. Mais nous sommes légion !!</h5>
             </div>
             <div class="w3-content w3-container w3-center w3-padding-64">
                 <div class="w3-third" style="padding-bottom:20px">
-                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')"
-                        onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
+                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')" onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
                         <header class="members-view">
                             <img src="assets/img/francois-small.jpg" alt="Photo de François AUBEUT-GERVAISE" class="members-img">
                             <h1 class="members-name">François AUBEUT-GERVAISE</h1>
@@ -271,8 +250,7 @@
                     <h2 class="members-function-bottom">Président</h2>
                 </div>
                 <div class="w3-third" style="padding-bottom:20px">
-                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')"
-                        onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
+                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')" onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
                         <header class="members-view">
                             <img src="assets/img/jimmy-small.jpg" alt="Photo de Jérémy SIMONKLEIN-ANGELY" class="members-img">
                             <h1 class="members-name">Jérémy SIMONKLEIN-ANGELY</h1>
@@ -288,8 +266,7 @@
                     <h2 class="members-function-bottom">Secrétaire</h2>
                 </div>
                 <div class="w3-third" style="padding-bottom:20px">
-                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')"
-                        onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
+                    <aside class="members-card" onmouseover="w3.hide('.members-name-bottom, .members-function-bottom')" onmouseout="w3.show('.members-name-bottom, .members-function-bottom')">
                         <header class="members-view">
                             <img src="assets/img/thibault-small.jpg" alt="Photo de François AUBEUT-GERVAISE" class="members-img">
                             <h1 class="members-name">Thibaut LEFORT</h1>
@@ -329,20 +306,13 @@
             </div>
             <div class="w3-content w3-container w3-center events-block-section">
                 <div class="w3-half">
-                    <p class="events-text">Js&Co c'est aussi des évènements aux nombreux sujets variés autour du
-                        JavaScript forcément. Mais
-                        il nous arrive aussi de parler d'entreprenariat, d'évolution de technologies, de sécurité et
-                        plus encore. Souvent basé à NovaMelée (anciennement La Cantine), nous réunissons des
-                        développeurs, des CTO, des CEO, des curieux, des super héros parfois. </p>
+                    <p class="events-text">Js&Co c'est aussi des évènements aux nombreux sujets variés autour du JavaScript forcément. Mais il nous arrive aussi de parler d'entreprenariat, d'évolution de technologies, de sécurité et plus encore. Souvent basé à NovaMelée (anciennement
+                        La Cantine), nous réunissons des développeurs, des CTO, des CEO, des curieux, des super héros parfois. </p>
                 </div>
                 <div class="w3-half">
-                    <p class="events-text">Nos Speakers viennent souvent du milieu technique, mais certains sortent du
-                        lot et nous
-                        expliquent leur parcours atypique.
-                        <br>
-                        Tiens toi au courant de ce qui se passe chez nous, car tu peux trouver un job ou encore
-                        embaucher un profil que tu recherchais depuis longtemps, trouver un associé ou juste passer
-                        boire un verre avec nous afin d'échanger et de rencontrer la communauté</p>
+                    <p class="events-text">Nos Speakers viennent souvent du milieu technique, mais certains sortent du lot et nous expliquent leur parcours atypique.
+                        <br> Tiens toi au courant de ce qui se passe chez nous, car tu peux trouver un job ou encore embaucher un profil que tu recherchais depuis longtemps, trouver un associé ou juste passer boire un verre avec nous afin d'échanger et
+                        de rencontrer la communauté</p>
                 </div>
             </div>
             <div class="w3-container w3-content w3-center w3-padding-64 events-block">
@@ -350,14 +320,11 @@
                     <div class="w3-card-4 events-card" style="width:100%">
                         <div class="w3-container w3-center">
                             <p class="meetup-date">6 novembre 2018</p>
-                            <h3 class="events-title" style="padding-top:15px;padding-bottom:15px">JS & BATTLE / BATTLE
-                                DEV 2018</h3>
+                            <h3 class="events-title" style="padding-top:15px;padding-bottom:15px">JS & BATTLE / BATTLE DEV 2018</h3>
                             <img src="assets/img/battle-img.jpeg" alt="Avatar" style="width:100%" class="events-img">
-                            <p class="meetup-text">Oyez oyez combattants et gladiateurs de toutes régions,Le BattleDev
-                                est enfin à l'horizon.Le 6 Novembre 2018 nous nous réunirons et en JavaScript nous...</p>
+                            <p class="meetup-text">Oyez oyez combattants et gladiateurs de toutes régions,Le BattleDev est enfin à l'horizon.Le 6 Novembre 2018 nous nous réunirons et en JavaScript nous...</p>
                             <div class="meetup-btn-section">
-                                <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/" target="_blank"
-                                    class="meetup-btn">Détails</a>
+                                <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/" target="_blank" class="meetup-btn">Détails</a>
                             </div>
                         </div>
                     </div>
@@ -368,12 +335,9 @@
                             <p class="meetup-date">26 octobre 2018</p>
                             <h3 class="events-title">LA TETE DANS LES ETOILES, LE CODE DANS METEOR</h3>
                             <img src="assets/img/code-meteor-img.jpeg" alt="Avatar" style="width:95%" class="events-img">
-                            <p class="meetup-text">Vous êtes nombreux à vous demander ce qu'on peut faire avec Meteor.
-                                Et vous n'êtes pas les seuls ! Au programme : présentation de Meteor et ses
-                                possibilités ...</p>
+                            <p class="meetup-text">Vous êtes nombreux à vous demander ce qu'on peut faire avec Meteor. Et vous n'êtes pas les seuls ! Au programme : présentation de Meteor et ses possibilités ...</p>
                             <div class="meetup-btn-section">
-                                <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/" target="_blank"
-                                    class="meetup-btn">Détails</a>
+                                <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/" target="_blank" class="meetup-btn">Détails</a>
                             </div>
                         </div>
                     </div>
@@ -384,12 +348,10 @@
                             <p class="meetup-date">25 juillet 2018</p>
                             <h3 class="events-title">DE NODEJS A METEOR : OBSTACLES ET EVOLUTIONS</h3>
                             <img src="assets/img/node-to-meteor-img.jpeg" alt="Avatar" style="width:95%" class="events-img">
-                            <p class="meetup-text">Au fur et à mesure de leur développement, les plateformes web
-                                changent plusieurs fois de technologies et doivent répondre à des besoins en constante
-                                évolution.</p>
+                            <p class="meetup-text">Au fur et à mesure de leur développement, les plateformes web changent plusieurs fois de technologies et doivent répondre à des besoins en constante évolution.
+                            </p>
                             <div class="meetup-btn-section">
-                                <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/" target="_blank"
-                                    class="meetup-btn">Détails</a>
+                                <a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/" target="_blank" class="meetup-btn">Détails</a>
                             </div>
                         </div>
                     </div>
@@ -403,8 +365,8 @@
         <div class="w3-row">
             <div class="w3-content w3-container w3-center block-title-section">
                 <h1 class="title-section">JS <span class="esperluette">&amp;</span> Co
-                    <br>
-                    Busine<span class="dollars">$$</span> Club</h1>
+                    <br> Busine
+                    <span class="dollars">$$</span> Club</h1>
                 <div class="esperluette-bar2"></div>
                 <div class="esperluette-circle2">
                     <div class="esperluette-incircle2">&</div>
@@ -414,60 +376,48 @@
                 <div class="w3-third jsbc-block" style="padding:0 10px 0 10px">
                     <h4 class="jsbc-title-text">L'union fait la force, mais pas que.</h4>
                     <hr class="jsbc-separator">
-                    <p class="jsbc-text">Travailler dans le web, ce n'est pas que faire du développement, ou du
-                        graphisme, c'est avant tout savoir se vendre, et prendre des risques. Et l'entrepreunariat sur
-                        le web, c'est comme toute bonne expérience de la vie : toujours bon à prendre, et toujours
-                        meilleur à plusieurs !</p>
+                    <p class="jsbc-text">Travailler dans le web, ce n'est pas que faire du développement, ou du graphisme, c'est avant tout savoir se vendre, et prendre des risques. Et l'entrepreunariat sur le web, c'est comme toute bonne expérience de la vie : toujours bon
+                        à prendre, et toujours meilleur à plusieurs !</p>
                 </div>
                 <div class="w3-third" style="padding:0 10px 0 10px">
                     <h4 class="jsbc-title-text">Se réunir pour échanger.</h4>
                     <hr class="jsbc-separator">
-                    <p class="jsbc-text">Dans cette idée d'entraide qui pousse JS&Co depuis sa fondation, nous
-                        organisons de manière régulière le JS Business Club, afin de regrouper les entrepreneurs du web
-                        et du développement, pour leur permettre d'échanger autour de leurs problématiques business
-                        communes.</p>
+                    <p class="jsbc-text">Dans cette idée d'entraide qui pousse JS&Co depuis sa fondation, nous organisons de manière régulière le JS Business Club, afin de regrouper les entrepreneurs du web et du développement, pour leur permettre d'échanger autour de leurs
+                        problématiques business communes.
+                    </p>
                 </div>
                 <div class="w3-third" style="padding:0 10px 0 10px">
                     <h4 class="jsbc-title-text">Réservé aux entrepreneurs.</h4>
                     <hr class="jsbc-separator">
-                    <p class="jsbc-text">Les JS Business Club sont uniquement réservés aux professionnels possédant un
-                        numéro SIRET. Le but est de favoriser l'échange entre pros, et non pas de former ou informer.
-                        Business is business !</p>
+                    <p class="jsbc-text">Les JS Business Club sont uniquement réservés aux professionnels possédant un numéro SIRET. Le but est de favoriser l'échange entre pros, et non pas de former ou informer. Business is business !</p>
                 </div>
             </div>
             <div class="w3-content w3-container w3-center w3-padding-64">
                 <div class="w3-third w3-container jsbc-block" style="padding-top:80px">
                     <img src="assets/img/money.svg" alt="Logo Money" class="jsbc-img">
                     <h2 class="jsbc-title">Pas de chichi !</h2>
-                    <p class="jsbc-text">Au JS Business Club, on est là principalement pour parler Business. Pas de
-                        présentations ou de meetups. Juste une réunion pour parler argent, contrats, et problématiques
-                        à côté du web.</p>
+                    <p class="jsbc-text">Au JS Business Club, on est là principalement pour parler Business. Pas de présentations ou de meetups. Juste une réunion pour parler argent, contrats, et problématiques à côté du web.</p>
                 </div>
                 <div class="w3-third w3-container jsbc-block" style="padding-top:80px">
                     <img src="assets/img/secret-service.svg" alt="Logo Expertise" class="jsbc-img">
                     <h2 class="jsbc-title">Réservé aux membres</h2>
-                    <p class="jsbc-title">Pour participer au JS Business Club, il faut obligatoirement être membre de
-                        l'association.</p>
+                    <p class="jsbc-title">Pour participer au JS Business Club, il faut obligatoirement être membre de l'association.
+                    </p>
                 </div>
                 <div class="w3-third w3-container jsbc-block" style="padding-top:80px">
                     <img src="assets/img/safe-box.svg" alt="Logo Entrepreneurs" class="jsbc-img">
                     <h2 class="jsbc-title">On se dit tout, mais pas n'importe comment</h2>
-                    <p class="jsbc-text">Tous les participants signent un accord de confidentialité avant de participer
-                        au JS Business Club.</p>
+                    <p class="jsbc-text">Tous les participants signent un accord de confidentialité avant de participer au JS Business Club.</p>
                 </div>
                 <div class="w3-half w3-container jsbc-block" style="padding-top:50px">
                     <img src="assets/img/team.svg" alt="Logo Développeurs" class="jsbc-img">
                     <h2 class="jsbc-title">En petit comité</h2>
-                    <p class="jsbc-text">Les participants pour chaque événement sont limités entre 5 et 10 maximum.
-                        Cela permet un peu plus de dynamisme dans les échanges et permet d'avoir des discussions
-                        réellement constructives et dédiées à chaque problème</p>
+                    <p class="jsbc-text">Les participants pour chaque événement sont limités entre 5 et 10 maximum. Cela permet un peu plus de dynamisme dans les échanges et permet d'avoir des discussions réellement constructives et dédiées à chaque problème</p>
                 </div>
                 <div class="w3-half w3-container jsbc-block" style="padding-top:50px">
                     <img src="assets/img/list.svg" alt="Logo Formations" class="jsbc-img">
                     <h2 class="jsbc-title">Sur acceptation des membres</h2>
-                    <p class="jsbc-text">Premier arrivé, premier servi ! Chaque membre déjà inscrit à un événement
-                        choisi de faire entrer les autres inscrits à l'événement. Mais ceux-ci peuvent automatiquement
-                        participer au prochain Business Club si ils sont refusés.</p>
+                    <p class="jsbc-text">Premier arrivé, premier servi ! Chaque membre déjà inscrit à un événement choisi de faire entrer les autres inscrits à l'événement. Mais ceux-ci peuvent automatiquement participer au prochain Business Club si ils sont refusés.</p>
                 </div>
             </div>
         </div>
@@ -482,29 +432,23 @@
                 <div class="esperluette-circle">
                     <div class="esperluette-incircle">&</div>
                 </div>
-                <h5 class="subtext-section">Un réseau de partenaires grandissant nous soutient dans nos actions et
-                    notre philosophie de simplifier l'accès au développement web.</h5>
+                <h5 class="subtext-section">Un réseau de partenaires grandissant nous soutient dans nos actions et notre philosophie de simplifier l'accès au développement web.</h5>
             </div>
             <div class="w3-container w3-center partners-block-section">
                 <div class="w3-col s12 m2 l2 partners-block">
-                    <a href="http://www.lamelee.com/" target="_blank"><img src="assets/img/lamelee.png" alt="Logo La Mélée"
-                            class="partners-img"></a>
+                    <a href="http://www.lamelee.com/" target="_blank"><img src="assets/img/lamelee.png" alt="Logo La Mélée" class="partners-img"></a>
                 </div>
                 <div class="w3-col s12 m2 l2 partners-block">
-                    <a href="https://lacantine-toulouse.org/" target="_blank"><img src="assets/img/novamelee.png" alt="Logo NovaMélée"
-                            class="partners-img"></a>
+                    <a href="https://lacantine-toulouse.org/" target="_blank"><img src="assets/img/novamelee.png" alt="Logo NovaMélée" class="partners-img"></a>
                 </div>
                 <div class="w3-col s12 m2 l2 partners-block">
-                    <a href="https://lacantine-toulouse.org/" target="_blank"><img src="assets/img/lacantine.png" alt="Logo La Cantine"
-                            class="partners-img"></a>
+                    <a href="https://lacantine-toulouse.org/" target="_blank"><img src="assets/img/lacantine.png" alt="Logo La Cantine" class="partners-img"></a>
                 </div>
                 <div class="w3-col s12 m2 l2 partners-block">
-                    <a href="https://techexmachina.com/" target="_blank"><img src="assets/img/txm.png" alt="Logo Tech Ex Machina"
-                            class="partners-img"></a>
+                    <a href="https://techexmachina.com/" target="_blank"><img src="assets/img/txm.png" alt="Logo Tech Ex Machina" class="partners-img"></a>
                 </div>
                 <div class="w3-col s12 m2 l2 partners-block">
-                    <a href="https://steadycook.fr/" target="_blank"><img src="assets/img/steadycook.png" alt="Logo steadycook"
-                            class="partners-img"></a>
+                    <a href="https://steadycook.fr/" target="_blank"><img src="assets/img/steadycook.png" alt="Logo steadycook" class="partners-img"></a>
                 </div>
                 <div class="w3-col s12 m2 l2 partners-block">
                     <a href="https://mexar.fr/" target="_blank"><img src="assets/img/mexar.png" alt="Logo Mexar" class="partners-img"></a>
@@ -594,12 +538,9 @@
             <div class="w3-quarter w3-center">
                 <h4 class="become-members-title">Derniers Evénements</h4>
                 <ul>
-                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/"
-                            target="_blank">JS & BATTLE / BATTLEDEV 2018</a></li>
-                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/"
-                            target="_blank">LA TETE DANS LES ETOILES, LE CODE DANS METEOR</a></li>
-                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/"
-                            target="_blank">DE NODEJS A METEOR : OBSTACLES ET EVOLUTION</a></li>
+                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417283/" target="_blank">JS & BATTLE / BATTLEDEV 2018</a></li>
+                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/255417085/" target="_blank">LA TETE DANS LES ETOILES, LE CODE DANS METEOR</a></li>
+                    <li style="padding-bottom:15px"><a href="https://www.meetup.com/fr-FR/JavaScript-and-Co/events/252191176/" target="_blank">DE NODEJS A METEOR : OBSTACLES ET EVOLUTION</a></li>
                 </ul>
             </div>
             <div class="w3-quarter">
@@ -612,11 +553,11 @@
         </div>
         <div class="subfooter-section">
             <div class="w3-content w3-container w3-center subfooter">
-                <p class="subfooter-text">&copy; Javascript & Co 2018 || Developed & Designed with <3 by Mexar and
-                        JMWebdesign</p>
+                <p class="subfooter-text">&copy; Javascript & Co 2018 || Developed & Designed with
+                    <3 by Mexar and JMWebdesign</p>
             </div>
         </div>
-    </footer> 
+    </footer>
 
 
     <script src="https://www.w3schools.com/lib/w3.js"></script>
