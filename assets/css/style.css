@@ -1039,6 +1039,18 @@ hr.jsbc-separator {
     color: #FFDB00;
 }
 
+.contact-social-icon:hover {
+    transform: scale(1.5);
+    transition: 0.7s;
+}
+
+.contact-social-mail {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.75em;
+}
+
 .contact-maps {
     border-top: 4px solid #FFDB00;
     margin-bottom: -6px;
