@@ -412,6 +412,11 @@ section {
     border-top: 4px solid #FFDB00;
 }
 
+.footer-last-events:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
 .subfooter-section {
     background-color: #ffdb00;
     color: #22292F;
