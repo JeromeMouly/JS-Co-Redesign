@@ -913,6 +913,10 @@ section {
 
 /* ----- EVENTS----- */
 
+.meetup-text {
+    text-align: justify;
+}
+
 .event-card-block {
     position: relative;
     width: 310px;
