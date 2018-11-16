@@ -1160,3 +1160,31 @@ hr.jsbc-separator {
     transform-origin: bottom;
     transition: transform 0.5s;
 }
+
+.contact-meetup:hover {
+    color: #e0393e;
+}
+
+.contact-twitter:hover {
+    color: #1da1f2;
+}
+
+.contact-facebook:hover {
+    color: #3b5998;
+}
+
+.contact-youtube:hover {
+    color: #ff0000;
+}
+
+.contact-github:hover {
+    color: #F5F5F5;
+}
+
+.contact-social-mail {
+    font-weight: bold;
+    font-size: 1.75rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+}
