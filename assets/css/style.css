@@ -919,6 +919,12 @@ section {
     padding-right: 10px;
 }
 
+.event-link:hover {
+    color: #FFDB00;
+    transition: .7s;
+    transform: scale(1.2);
+}
+
 .meetup-text {
     text-align: justify;
 }
