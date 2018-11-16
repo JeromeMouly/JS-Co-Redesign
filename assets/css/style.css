@@ -913,6 +913,12 @@ section {
 
 /* ----- EVENTS----- */
 
+.events-text {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .meetup-text {
     text-align: justify;
 }
@@ -948,7 +954,7 @@ section {
 .event-card-block .event-details {
     top: 0;
     left: 0;
-    width: 70%;
+    width: 85%;
     /*100%*/
     height: 100%;
     background: #FFDB00;
@@ -1018,6 +1024,64 @@ section {
     background: #ff3636;
 }
 
+.event-btn-section {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.event-btn {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #22292F;
+    color: #22292F;
+    padding: 8px 10px;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 4px solid #22292F;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.event-btn:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.event-btn:hover:before {
+    top: -50%;
+}
+
+.event-btn:hover {
+    color: #FFF;
+}
+
+.event-btn:after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFDB00;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.event-btn:hover:after {
+    bottom: -50%;
+}
+
 
 /* ----- JSBC ----- */
 
@@ -1060,19 +1124,6 @@ hr.jsbc-separator {
     background-color: #22292F;
     color: #FFDB00;
 }
-
-
-/* .contact-social-icon:hover {
-    transform: scale(1.5);
-    transition: 0.7s;
-}
-
-.contact-social-mail {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 1.75em;
-} */
 
 .contact-maps {
     border-top: 4px solid #FFDB00;
