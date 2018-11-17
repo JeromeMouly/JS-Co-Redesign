@@ -446,7 +446,13 @@ section {
     border-bottom: 4px solid #22292F;
 }
 
-.esperluette,
+.esperluette {
+    color: #FFDB00;
+}
+
+.esperluette-hero,
+.esperluette-contact,
+.esperluette-members,
 .dollars {
     color: #FFF;
 }
@@ -526,7 +532,7 @@ section {
 /* ----- ABOUT ----- */
 
 #about {
-    background-color: #FFF;
+    background-color: #f5f5f5;
     border-bottom: 4px solid #FFDB00;
     padding-bottom: 42px;
 }
@@ -912,6 +918,10 @@ section {
 
 
 /* ----- EVENTS----- */
+
+#events {
+    background-color: #f5f5f5;
+}
 
 .events-text {
     text-align: justify;
