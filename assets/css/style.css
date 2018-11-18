@@ -446,13 +446,13 @@ section {
     border-bottom: 4px solid #22292F;
 }
 
-.esperluette {
+.esperluette,
+.esperluette-members {
     color: #FFDB00;
 }
 
 .esperluette-hero,
 .esperluette-contact,
-.esperluette-members,
 .dollars {
     color: #FFF;
 }
@@ -733,7 +733,7 @@ section {
 #members-page {
     width: 100%;
     height: 100%;
-    background-color: #FFDB00;
+    background-color: #F5F5F5;
     color: #22292F;
 }
 

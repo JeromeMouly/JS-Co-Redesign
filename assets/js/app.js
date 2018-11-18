@@ -1,7 +1,7 @@
 /* ----- NAVIGATION ----- */
 
 function myFunction() {
-    var x = document.getElementById("navBar");
+    let x = document.getElementById("navBar, chooseNumbers");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
@@ -17,11 +17,11 @@ function closeOnClick() {
 
 /* ----- DROPDOWNS MODAL BECOME MEMBERS ----- */
 
-function myFunction() {
-    var y = document.getElementById("chooseNumbers");
-    if (y.className.indexOf("w3-show") == -1) {
-        y.className += " w3-show";
-    } else {
-        y.className = y.className.replace(" w3-show", "");
-    }
-}
+// function myFunction() {
+//     let y = document.getElementById("chooseNumbers");
+//     if (y.className.indexOf("w3-show") == -1) {
+//         y.className += " w3-show";
+//     } else {
+//         y.className = y.className.replace(" w3-show", "");
+//     }
+// }
