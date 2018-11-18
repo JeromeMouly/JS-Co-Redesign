@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Titillium+Web:200,300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Titillium+Web');
 
 /*  font-family: 'Titillium Web', sans-serif;
     font-family: 'Raleway', sans-serif; */
@@ -27,10 +27,6 @@ h6 {
 
 a {
     text-decoration: none;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
 }
 
 ul {
