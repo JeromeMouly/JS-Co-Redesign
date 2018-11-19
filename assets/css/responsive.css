@@ -1,15 +1,17 @@
 @media screen and (max-width:400px) {
-    .center {
+    .hero-container {
         margin-top: 390px;
     }
-    .textBlock1 {
-       font-size: 8em;
+    .hero-textBlock1 {
+        font-size: 8em;
     }
-    .textBlock2 {
-       font-size: 1em;
-       line-height: 3em;
+    .hero-textBlock2 {
+        font-size: 1em;
+        line-height: 3em;
     }
-    .textBlock3, .textBlock4, .textBlock5 {
+    .hero-textBlock3,
+    .hero-textBlock4,
+    .hero-textBlock5 {
         font-size: 2em;
     }
 }

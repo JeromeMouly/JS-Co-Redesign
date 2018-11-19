@@ -1,7 +1,7 @@
 /* ----- NAVIGATION ----- */
 
 function myFunction() {
-    let x = document.getElementById("navBar, chooseNumbers");
+    let x = document.getElementById("navBar");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
@@ -14,14 +14,3 @@ function closeOnClick() {
     nav.className = nav.className.replace(" w3-show", "");
 
 }
-
-/* ----- DROPDOWNS MODAL BECOME MEMBERS ----- */
-
-// function myFunction() {
-//     let y = document.getElementById("chooseNumbers");
-//     if (y.className.indexOf("w3-show") == -1) {
-//         y.className += " w3-show";
-//     } else {
-//         y.className = y.className.replace(" w3-show", "");
-//     }
-// }
