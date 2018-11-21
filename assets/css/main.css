@@ -184,12 +184,11 @@ section {
     background-color: #ffdb00;
     color: #22292F;
     width: 100%;
-    height: 25px;
+    height: 55px;
 }
 
 .subfooter {
     font-size: 0.75em;
-    line-height: 2px;
 }
 
 .twitter-block {
@@ -257,6 +256,14 @@ section {
 
 .become-members-btn:hover:after {
     bottom: -50%;
+}
+
+.mentions:hover {
+    background-color: #22292F;
+    color: #FFDB00;
+    transition: .7s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 
