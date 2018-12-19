@@ -15,9 +15,10 @@ a {
     text-decoration: none
 }
 
-ul,
-li {
-    list-style: none;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -855,6 +856,10 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+}
+
+.event-btn-section {
+    padding: 75px;
 }
 
 .event-btn {
