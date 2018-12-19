@@ -851,7 +851,7 @@ section {
     background: #ff3636;
 }
 
-.event-btn-section {
+.    {
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
@@ -1058,7 +1058,7 @@ hr.jsbc-separator {
 }
 
 .contact-meetup:hover {
-    color: #e0393e;
+    color: #e0393e !important;
 }
 
 .contact-twitter:hover {
